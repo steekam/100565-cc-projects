@@ -45,3 +45,18 @@ To show the description of the output from the scanner:
 ```bash
 ./a program.txt
 ```
+
+A snippet of the output:
+```
+A keyword: function 
+An identifier: compare_strings 
+A symbol: ( 
+An identifier: str_1 
+A separator symbol: , 
+An identifier: str_2 
+A symbol: ) 
+```
+
+__The output explained:__
+
+The snippet is from the piece of code in `function compare_strings(str_1, str_2)`. The scanner has identified several tokens based on regex rules defined in the lexer file. For instance, a valid identifier in this program is all lowercase letters and can include _ (underscore). The defined regex in the lexer is `[a-z_][a-z0-9_]*`
