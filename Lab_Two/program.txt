@@ -1,0 +1,7 @@
+function compare_strings(str_1, str_2) {
+    let matches = 0;
+    if (str_1 == str_2) {
+        matches = 1;
+    }
+    return matches;
+}
